@@ -65,7 +65,7 @@ Plugin 'jaxbot/github-issues.vim'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'rking/ag.vim'
-Plugin 'Shugo/neocomplete.vim'
+Plugin 'Shougo/neocomplete.vim'
 
 " Syntax stuff
 Plugin 'evanmiller/nginx-vim-syntax'
