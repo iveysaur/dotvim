@@ -42,6 +42,39 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 nnoremap <D-h> :bprev<CR>
 nnoremap <D-l> :bnext<CR>
 
+" Esc unhighlights!!
+nnoremap <Esc> :nohl<CR>
+
+" Vundle + Plugins
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Vundle
+Plugin 'gmarik/Vundle.vim'
+
+" Brolink
+Plugin 'jaxbot/brolink.vim'
+
+" Git(hub) integration
+Plugin 'tpope/vim-fugitive'
+Plugin 'gregsexton/gitv'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'jaxbot/github-issues.vim'
+
+" Tools
+Plugin 'bling/vim-airline'
+Plugin 'scrooloose/nerdtree'
+Plugin 'rking/ag.vim'
+Plugin 'Shugo/neocomplete.vim'
+
+" Syntax stuff
+Plugin 'evanmiller/nginx-vim-syntax'
+Plugin 'myhere/vim-nodejs-complete'
+Plugin 'moll/vim-node'
+Plugin 'jelera/vim-javascript-syntax'
+
+call vundle#end()
+
 syntax on
 filetype plugin on
 filetype plugin indent on
@@ -101,12 +134,6 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=1
 let g:DisableAutoPHPFolding = 1
-
-" Pathogen
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
-" Plugins
 
 set undolevels=400  " Vim setting
 
