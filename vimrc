@@ -45,6 +45,10 @@ nnoremap <D-l> :bnext<CR>
 " Esc unhighlights!!
 nnoremap <Esc> :nohl<CR>
 
+" Enter will enter a new line without insert mode c:
+nnoremap <S-Enter> O<Esc>
+nnoremap <CR> o<Esc>
+
 " Vundle + Plugins
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
