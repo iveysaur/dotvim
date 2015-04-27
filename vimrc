@@ -44,7 +44,7 @@ nnoremap <D-h> :bprev<CR>
 nnoremap <D-l> :bnext<CR>
 
 " Esc unhighlights!!
-nnoremap <Esc> :nohl<CR>
+nnoremap \ :nohl<CR>
 
 " Enter will enter a new line without insert mode c:
 nnoremap <S-Enter> O<Esc>
